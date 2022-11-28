@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-# Configure the AWS Provider
+# Configure the AWS Provider given
 
 provider "aws" {
   version = "~> 4.0"
