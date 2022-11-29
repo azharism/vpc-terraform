@@ -19,7 +19,7 @@ resource "aws_vpc_ipam_pool_cidr" "test" {
 
 resource "aws_vpc" "test" {
   ipv4_ipam_pool_id   = aws_vpc_ipam_pool.test.id
-  ipv4_netmask_length = 28
+  ipv4_netmask_length = 28  #reserve network
   depends_on = [
     aws_vpc_ipam_pool_cidr.test
   ]
